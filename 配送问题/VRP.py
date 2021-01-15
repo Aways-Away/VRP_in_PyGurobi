@@ -9,9 +9,7 @@
 
 from __future__ import print_function
 from __future__ import division, print_function
-import numpy as np
 from gurobipy import *
-import copy
 
 
 class VRP(object):

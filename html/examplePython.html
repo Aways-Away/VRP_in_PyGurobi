@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2019" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2019" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Python examples" />
+<meta name="abstract" content="These examples in Python use the Callable Library." />
+<meta name="Description" content="These examples in Python use the Callable Library." />
+<meta name="DC.Relation" scheme="URI" content="../../../CPLEX/homepages/examplescplex.html" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="CvigKWE8" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../../../ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../../../swg_info_common_opti.css" />
+<link rel="Start" href="../../../CPLEX/homepages/examplescplex.html" />
+<title>Python examples</title>
+</head>
+<body id="CvigKWE8"><div role="main">
+
+   <h1 class="title topictitle1" id="ariaid-title1">Python examples</h1>
+
+   
+   <div class="body"><p class="shortdesc">These examples in Python use the Callable Library.</p>
+
+      <p class="p">The following examples are delivered with CPLEX in IBM
+ILOG CPLEX Optimization Studio.</p>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" role="presentation" class="table presentation NoBorder" rules="none" frame="void" border="0"><colgroup></colgroup><tbody class="tbody">
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">admipex9.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">uses a <strong class="ph b">generic</strong> callback involving a <strong class="ph b">heuristic</strong> to optimize a MIP.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">admipex8.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">demonstrates how to add lazy constraints and user cuts with the <strong class="ph b">generic</strong>
+callback.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">admipex6.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">an advanced application, it solves a mixed integer
+programming (MIP) problem starting from an LP solution.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">admipex5.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">an advanced application, shows how to add cuts for
+a MIP by means of a cut callback.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">admipex4.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">demonstrates how to add lazy constraints and user cuts.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">admipex3.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">an advanced application, uses a branch callback on
+a MIP with special ordered sets (SOS).</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">admipex2.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">an advanced application, uses a heuristic callback
+to optimize a MIP.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">admipex1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">an advanced application, uses node and branch callbacks
+to optimize a MIP.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">benders.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">demonstrates a Benders decomposition.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">bendersatsp.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">demonstrates <strong class="ph b">legacy</strong> lazy constraint callbacks to separate
+integer feasible LP solutions and <strong class="ph b">legacy</strong> user cut callbacks to separate fractional
+infeasible LP solutions in a do-it-yourself Benders decomposition of an asymmetric
+traveling salesperson problem.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">bendersatsp2.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">demonstrates <strong class="ph b">generic</strong> callbacks to separate
+integer feasible LP solutions in a context of lazy constraints and <strong class="ph b">generic</strong> callbacks to separate fractional
+infeasible LP solutions in a context of user cuts, all in a do-it-yourself Benders decomposition of an asymmetric
+traveling salesperson problem.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">blend.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">solves a blending problem.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">conflictex1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">demonstrates how to use the conflict refiner.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">cutstock.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">solves a cutting stock problem, where a maximum number
+of patterns should be cut from stock with minimum waste. The model
+illustrates column-generation.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">diet.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">is an implementation in Python of the classic diet problem; a linear program that can be
+generated by columns (add foods to the diet) or by rows (add requirements to the diet); optionally,
+demonstrates how to model a multiobjective problem by creating a second objective.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">multiobjex1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">demonstrates how to read in and optimize a multiobjective problem.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">etsp.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">is an implementation in Python of an early-tardy scheduling problem
+that uses indicator constraints.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">facility.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">solves a facility-location problem where warehouses
+have limited storage and must meet distribution needs. This example 
+also offers an option to use Benders decomposition and algorithm.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">fixcost1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">solves a production planning problem with fixed costs.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">fixnet.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">uses indicator constraints to avoid numeric difficulty in a fixed-charge network flow
+problem.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">foodmanu.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">implements a solution to the food production planning
+problem, well known from the modeling textbook of H. P. Williams;
+this implementation uses indicator constraints and semi-continuous
+variables.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">genericbranch.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">demonstrates how to perform customized branching using the generic callback.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">globalqpex1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">shows how to read a convex or nonconvex quadratic programming model (QP) and
+solve it for a first order or <strong class="ph b">global</strong> optimum.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">indefqpex1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">shows how to solve an indefinite quadratic programming
+example to a local optimum.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">inout1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">a production planning problem aiming to minimize cost,
+where goods may be manufactured internally or purchased from outside
+sources.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">inout3.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">a production planning problem with additional constraints
+on costs.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">lpex1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">is a basic linear programming example, illustrating
+data population techniques by rows, by columns, by coefficients.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">lpex2.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">is a basic linear programming example with data coming
+from files.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">lpex3.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">demonstrates how to add rows to a problem and re-optimize;
+the examples begins with a network flow model, uses the network optimizer
+to solve it, adds additional constraints, and invokes the dual simplex
+optimizer to resolve the new model.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">lpex4.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">illustrates CPLEX callback functions; it is derived
+from <span class="ph filepath">lpex1.py</span>.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">lpex5.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">illustrates message handling.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">lpex6.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">shows how to load a basis.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">lpex7.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">shows how to access names of columns.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">mipex1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">solves a basic mixed integer programming (MIP) problem.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">mipex2.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">solves a basic MIP with data from files.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">mipex3.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">illustrates SOS sets and priority orders.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">mipex4.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">demonstrates how to use the <code class="ph codeph">Aborter</code> class to
+interrupt optimization and how to use informational callbacks for
+logging, timing, or setting a node limit.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">miqpex1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">solves a mixed integer programming problem (MIP) with
+a quadratic term in the objective function.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">populate.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">shows how to generate and store multiple solutions
+in the solution pool.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">qcpex1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">optimizes a quadratically constrained model.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">qpex1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">solves a model with a quadratic term in the objective
+function.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">qpex2.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">solves a model with a quadratic term in the objective
+function and reads data from a file.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">rates.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">is a planning problem using semi-continuous variables.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">socpex1.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">shows how to access dual values and
+reduced costs in SOCP models.</td>
+
+                  </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">qcpdual.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">shows how to access dual values and
+reduced costs in quadratically constrained programming models (QCP).</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">steel.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">solves the model known as steelT.mod in the AMPL book
+by Fourer, Gay, and Kernighan.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">transport.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">uses a piecewise linear cost function.</td>
+
+               </tr>
+
+               <tr class="row">
+                  <td class="entry nrule tdleft" align="left" valign="top">
+                     <span class="ph filepath">warehouse.py</span>
+                  </td>
+
+                  <td class="entry nrule tdleft" align="left" valign="top">is a warehouse-location problem, using semi-continuous
+integer variables.</td>
+
+               </tr>
+
+            </tbody>
+</table>
+</div>
+
+   </div>
+
+   <nav role="navigation" class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../../CPLEX/homepages/examplescplex.html">Examples of CPLEX</a></div>
+</div>
+</nav></div></body>
+</html>
